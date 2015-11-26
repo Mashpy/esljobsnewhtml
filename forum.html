@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>ESL Forum</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/flaticon.css" rel="stylesheet">
+    
+     <!-- Google Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600,300,700,600italic,300italic,400italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,100,300,700,900' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<style>
+#image_div{
+    display: none;
+}
+</style>
+<body id="page-top" data-target=".navbar-fixed-top" class="esl-fourm">
+    
+    <!-- Header -->
+    <header class="header">
+
+	<div class="div-top-header">	
+	
+    <!--Branding and Main Navigation-->
+<nav id="primaery-navbar" class="navbar navbar-default" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="col-md-4 col-sm-4 col-xs-12">          
+                 <a class="navbar-brand" href="index.html"><span>ESL</span> Jobs Lounge</a>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-12">
+               <div class="col-md-3 col-xs-12 col-sm-6 pull-right login-signup-btn">
+                    <a class="sign-in-login-btn green-btn">
+                    <i class="fa fa-user-plus"></i> 
+                    Sign Up                                      
+                    </a>
+
+                </div>
+                <div class="col-md-3 col-xs-12 col-sm-6 pull-right login-signup-btn">
+                    <a class="sign-in-login-btn" href="login.html">
+                    <i class="fa fa-sign-in"></i> 
+                    Login
+                    </a>
+                </div> 
+            <div class="col-md-6 col-xs-12 col-sm-6 pull-right login-signup-btn">
+               <div class="col-md-12 nopadding">
+               <!-- <div class="category-field">
+                 <select name="" id="input" class="form-control" required="required">                         
+                          <option value=""><i class="fa fa-search"></i> <span class="hide-text">Jobs</span></option>
+                          <option value="">Teachers</option>
+                          <option value="">Employers</option>
+                          <option value="">Forum</option>
+                        </select>
+                        <i class="fa fa-angle-down"></i>                        
+               </div> -->
+                <form class="navbar-form pull-right" role="search" method="get" id="searchform" action="#">
+                <div class="input-group cutsominput-group">
+                    <div class="input-group-btn">
+                        <button type="button" id="searchcategory" value="BLOG" class="btn btn-cat" data-toggle="dropdown" aria-expanded="false">Jobs <span class="caret"></span></button>
+        
+                        <ul id="searchdropdown" class="dropdown-menu" role="menu">
+                            <li><a href="javascript:void(0)">Jobs</a></li>
+                            <li><a href="javascript:void(0)">Teachers</a></li>
+                            <li><a href="javascript:void(0)">Employers</a></li>
+                            <li><a href="javascript:void(0)">Forum</a></li>          
+                        </ul>
+                    </div>
+                    <input type="text" class="form-control search-field" value="" placeholder="Search..." name="s" id="s">
+                    <div class="input-group-btn">
+                        <button type="submit" id="searchsubmit" value="Search" class="btn btn-cat btn-green"><span class="glyphicon glyphicon-search"></span></button>
+                    </div>
+                </div>
+            </form> 
+               </div>
+               <!-- <div class="col-md-8 nopl">
+                    <div class="search-filed">
+                    <form>
+                        
+                        <input type="text" name="" id="" placeholder="Search your keyword..">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                    </div>
+                    </div> -->
+               </div>   
+            </div>   
+            </div>
+    </nav>  
+   </div>
+   
+    </header>
+
+    <section class="page-heading-sec">    
+        <div class="container">
+            <div class="row">
+            <div class="page-heading">
+                 <h1>ESL Jobs Lounge Forum</h1>            
+            </div>       
+        </div>
+    </div>
+
+    </section>
+    
+    <!-- Forum Categories Section  -->
+    <section class="forum-categories-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul class="list-inline categories-listing text-center">
+                        <li>
+                            <div class="category-single-box">
+                                <a href="#">
+                                    <!-- <i class="glyph-icon flaticon-help18"></i> -->    
+                                    <p>Jobs Q&A</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category-single-box">
+                                 <a href="#">
+                                    <!-- <i class="glyph-icon flaticon-man42"></i>  -->
+                                    <p>Employers Q&A</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category-single-box">
+                                 <a href="#">
+                                    <!-- <i class="glyph-icon flaticon-configuration30"></i>  -->
+                                     <p>General Queries</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category-single-box">
+                                 <a href="#">
+                                    <!-- <i class="glyph-icon flaticon-protest2"></i>  -->
+                                    <p>Announcements</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category-single-box">
+                                     <a href="#">
+                                    <!--  <i class="glyph-icon flaticon-tools6"></i>  -->
+                                    <p>Troubleshooting</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category-single-box">
+                                 <a href="#">
+                                   <!--  <i class="glyph-icon flaticon-open-book1"></i>  -->
+                                    <p>Latest Materials</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category-single-box">
+                                 <a href="#">
+                                     <!-- <i class="glyph-icon flaticon-teacher9"></i> --> 
+                                    <p>Teaching Methods</p>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="category-single-box">
+                                 <a href="#">
+                                   <!--  <i class="fa fa-check"></i> --> 
+                                    <p>Success Stories</p>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>                
+            </div>
+        </div>
+    </section>
+
+    <!-- Forum Section -->
+    <section class="forum-section">
+        <div class="container">
+            <div class="row">
+            <div class="col-md-9">
+                <!-- Post Box -->
+                <div class="fourm-post-box">
+                    <div class="post-forumbox">
+                    <div class="fourm-member-img-cover">
+                        <img src="images/prof-img-1.jpg" alt="">
+                    </div>  
+                    <div class="fourm-member-text">
+                        <h5>Tutor book for teens</h5>
+                        <span>26 Aug, 2015</span>
+                        <span>1 hr</span>
+                        <span class="categories-name">Teachers</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="fourm-post-text more">
+                        Nulla dignissim lorem sit amet justo viverra, posuere sagittis leo efficitur. Donec metus neque, luctus sodales convallis ut, scelerisque convallis sem. Vivamus fringilla diam id posuere pellentesque.Nulla dignissim lorem sit amet justo viverra, posuere sagittis leo efficitur. Donec metus neque, luctus sodales convallis ut, scelerisque convallis sem. Vivamus fringilla diam id posuere pellentesque.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam.
+                    </div>
+                    <div class="fourm-comment-likes">
+                         <div class="single-icon">
+                        <a href="">
+                            <i class="fa fa-thumbs-o-up"></i>
+                            Like (15)
+                        </a>
+                        </div>
+                        <div class="single-icon">
+                        <a href="">
+                            <i class="fa fa-comment-o"></i>
+                            Comment (2)
+                        </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    </div>
+
+                    <div class="fourm-comment-box">
+                       
+                        <div class="clearfix"></div>
+                        <div class="fourm-user-comments">
+                            <ul>
+                                <li>
+                                <div class="single-urer-comment">
+                                <div class="col-md-1 nopadding">
+                                <div class="singl-urer-img">
+                                   <img src="images/comment-img-1.jpg" class="img-responsive">
+                                </div>
+                                </div>
+                                    <!-- single comment  -->  
+                                    <div class="col-md-11 nopadding"> 
+                                <div class="single-user-com">
+                                    <span class="comment-user-name"><a href="">Laura Roeder</a></span>
+                                    <span class="user-comment-text more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam. </span>
+                                    
+                                </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                                </li>
+                                <li>
+                                    <div class="single-urer-comment">
+                                <div class="col-md-1 nopadding">
+                                <div class="singl-urer-img">
+                                   <img src="images/comment-img-2.jpg" class="img-responsive">
+                                </div>
+                                </div>
+                                    <!-- single comment  -->  
+                                    <div class="col-md-11 nopadding"> 
+                                <div class="single-user-com">
+                                    <span class="comment-user-name"><a href="">Gabrielle Bernstein</a></span>
+                                    <span class="user-comment-text more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam. </span>
+                                    
+                                </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                </div>
+                 <div class="leav-reply-button">
+                    <h4><a href="javascript:void(0)">Leave A Reply</a></h4>
+                </div>
+                <div class="message-box">
+                        <div class="msgbox-img">
+                            <img src="images/olga-barasoain.jpg">
+                        </div> 
+                        <div class="textarea-box">
+                        <form method="POST" id="form1" runat="server">
+                            <textarea name="" id="input" class="form-control" rows="3" required="required"></textarea>
+                          
+                            </form>
+                        </div>
+                        <div class="clearfix"></div>
+                       
+                      
+                    </div>
+                    
+
+            </div>
+
+            <!-- Post Box -->
+            <div class="fourm-post-box">
+                    <div class="post-forumbox">
+                    <div class="fourm-member-img-cover">
+                        <img src="images/davene-januszewski.jpg" alt="">
+                    </div>  
+                    <div class="fourm-member-text">
+                        <h5>New piano student with previous treble clef experience</h5>
+                        <span>26 Aug, 2015</span>
+                        <span>1 hr</span>
+                        <span class="categories-name">Teachers</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="fourm-post-text more">
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam.
+                    </div>
+                    <div class="fourm-comment-likes">
+                         <div class="single-icon">
+                        <a href="">
+                            <i class="fa fa-thumbs-o-up"></i>
+                            Like (15)
+                        </a>
+                        </div>
+                        <div class="single-icon">
+                        <a href="">
+                            <i class="fa fa-comment-o"></i>
+                            Comment (2)
+                        </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    </div>
+
+                    <div class="fourm-comment-box">
+                       
+                        <div class="clearfix"></div>
+                        <div class="fourm-user-comments">
+                            <ul>
+                                <li>
+                                <div class="single-urer-comment">
+                                <div class="col-md-1 nopadding">
+                                <div class="singl-urer-img">
+                                   <img src="images/prof-img-1.jpg" class="img-responsive">
+                                </div>
+                                </div>
+                                    <!-- single comment  -->  
+                                    <div class="col-md-11 nopadding"> 
+                                <div class="single-user-com">
+                                    <span class="comment-user-name"><a href="">Lewis Howes</a></span>
+                                    <span class="user-comment-text more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam. </span>
+                                    
+                                </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                                </li>
+                                <li>
+                                    <div class="single-urer-comment">
+                                <div class="col-md-1 nopadding">
+                                <div class="singl-urer-img">
+                                   <img src="images/comment-img-4.jpg" class="img-responsive">
+                                </div>
+                                </div>
+                                    <!-- single comment  -->  
+                                    <div class="col-md-11 nopadding"> 
+                                <div class="single-user-com">
+                                    <span class="comment-user-name"><a href="">Britt Michaelian</a></span>
+                                    <span class="user-comment-text more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam. </span>
+                                    
+                                </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                </div>
+                 <div class="leav-reply-button">
+                    <h4><a href="javascript:void(0)">Leave A Reply</a></h4>
+                </div>
+                <div class="message-box">
+                        <div class="msgbox-img">
+                            <img src="images/olga-barasoain.jpg">
+                        </div> 
+                        <div class="textarea-box">
+                        <form method="POST" id="form1" runat="server">
+                            <textarea name="" id="input" class="form-control" rows="3" required="required"></textarea>
+                          
+                            </form>
+                        </div>
+                        <div class="clearfix"></div>
+                       
+                      
+                    </div>
+                    
+
+            </div>
+
+            <!-- Post Box -->
+            <div class="fourm-post-box">
+                    <div class="post-forumbox">
+                    <div class="fourm-member-img-cover">
+                        <img src="images/prof-img-2.jpg" alt="">
+                    </div>  
+                    <div class="fourm-member-text">
+                        <h5>The Well Tempered Keyboard Teacher - Is It Worth It?</h5>
+                        <span>26 Aug, 2015</span>
+                        <span>1 hr</span>
+                        <span class="categories-name">Teachers</span>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="fourm-post-text more">
+                       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc quam neque, lobortis sit amet dignissim quis, aliquet non ipsum. Donec nibh lacus, interdum nec tortor in, lobortis malesuada quam.
+                    </div>
+                    <div class="fourm-comment-likes">
+                         <div class="single-icon">
+                        <a href="">
+                            <i class="fa fa-thumbs-o-up"></i>
+                            Like (15)
+                        </a>
+                        </div>
+                        <div class="single-icon">
+                        <a href="">
+                            <i class="fa fa-comment-o"></i>
+                            Comment (2)
+                        </a>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+
+                    </div>
+
+                    <div class="fourm-comment-box">
+                       
+                        <div class="clearfix"></div>
+                        <div class="fourm-user-comments">
+                            <ul>
+                                <li>
+                                <div class="single-urer-comment">
+                                <div class="col-md-1 nopadding">
+                                <div class="singl-urer-img">
+                                   <img src="images/comment-img-2.jpg" class="img-responsive">
+                                </div>
+                                </div>
+                                    <!-- single comment  -->  
+                                    <div class="col-md-11 nopadding"> 
+                                <div class="single-user-com">
+                                    <span class="comment-user-name"><a href="">Gabrielle Bernstein</a></span>
+                                    <span class="user-comment-text more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget nibh id tortor vehicula accumsan. Nulla ante orci, mollis a nulla at, lacinia gravida quam. Etiam ac volutpat nisi.  Nulla ante orci, mollis a nulla at, lacinia gravida quam. Etiam ac volutpat nisi. </span>
+                                    
+                                </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                                </li>
+                                <li>
+                                    <div class="single-urer-comment">
+                                <div class="col-md-1 nopadding">
+                                <div class="singl-urer-img">
+                                   <img src="images/comment-img-1.jpg" class="img-responsive">
+                                </div>
+                                </div>
+                                    <!-- single comment  -->  
+                                    <div class="col-md-11 nopadding"> 
+                                <div class="single-user-com">
+                                    <span class="comment-user-name"><a href="">Laura Roeder</a></span>
+                                    <span class="user-comment-text more">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget nibh id tortor vehicula accumsan. Nulla ante orci, mollis a nulla at, lacinia gravida quam. Etiam ac volutpat nisi.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce eget nibh id tortor vehicula accumsan. Nulla ante orci, mollis a nulla at, lacinia gravida quam. Etiam ac volutpat nisi.  </span>
+                                   <!--   -->
+                                </div>
+                                </div>
+                                <div class="clearfix"></div>
+                            </div>
+                                </li>
+                            </ul>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="clearfix"></div>
+                </div>
+                <div class="leav-reply-button">
+                    <h4><a href="javascript:void(0)">Leave A Reply</a></h4>
+                </div>
+                <div class="message-box">
+                        <div class="msgbox-img">
+                            <img src="images/olga-barasoain.jpg">
+                        </div> 
+                        <div class="textarea-box">
+                        <form method="POST" id="form1" runat="server">
+                            <textarea name="" id="input" class="form-control" rows="3" required="required"></textarea>
+                          
+                            </form>
+                        </div>
+                        <div class="clearfix"></div>
+                       
+                      
+                    </div>
+                    
+
+            </div>
+            </div>
+            <div class="col-md-3">
+                <!-- Thread Box -->
+                <div class="threadbox">
+                    <div class="thread-box-heading">
+                        <h1>Latest Threads</h1>
+                    </div>
+                    <div class="thread-list">
+                        <ul>
+                            <li><a href="">Activities and Games</a></li>
+                            <li><a href="">Computer Assisted Language Learning</a></li>
+                            <li><a href="">ESL Management</a></li>
+                            <li><a href="">ESL Demo Class in China!</a></li>
+                            <li><a href="">Semester versus 7-week programs</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Thread Box -->
+                <div class="threadbox">
+                    <div class="thread-box-heading">
+                        <h1>Featured Threads</h1>
+                    </div>
+                    <div class="thread-list">
+                        <ul>
+                            <li><a href="">Activities and Games</a></li>
+                            <li><a href="">Computer Assisted Language Learning</a></li>
+                            <li><a href="">ESL Management</a></li>
+                            <li><a href="">ESL Demo Class in China!</a></li>
+                            <li><a href="">Semester versus 7-week programs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Thread Box -->
+                <div class="threadbox">
+                    <div class="thread-box-heading">
+                        <h1>Top Forum Members</h1>
+                    </div>
+                    <div class="thread-list">
+                        <ul>
+                            <li><a href="">Activities and Games</a></li>
+                            <li><a href="">Computer Assisted Language Learning</a></li>
+                            <li><a href="">ESL Management</a></li>
+                            <li><a href="">ESL Demo Class in China!</a></li>
+                            <li><a href="">Semester versus 7-week programs</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+                            
+             
+              
+            </div>
+   </div>
+   </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-copyright">
+                 <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                              <p> © ESL Jobs Lounge. All rights reserved. </p>
+                        </div>
+                        <div class="col-md-6 footer-links pull-left">
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Advertise</a></li>
+                                <li><a href="#">Terms &amp; Conditions</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Contact Us</a></li>                         
+                            </ul>
+                        </div>
+                    </div>
+                 </div>        
+            </div>
+            <div class="footer-social-media">
+                <div class="container">
+                    <div class="row">
+                    <div class="col-md-12 socialMediaHeader">
+                    <h4>Connect with us</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>                       
+                    </ul>
+                </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+	
+	<!-- Footer -->
+	
+	
+    
+    <!-- jQuery Resources-->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Custom Script -->
+    <script src="js/custom-script.js"></script>
+
+</body>
+
+</html>
